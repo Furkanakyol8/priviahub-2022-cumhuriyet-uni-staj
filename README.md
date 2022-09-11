@@ -19,6 +19,16 @@ Git install Link
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 
+## rbenv
+Bir versiyon yönetim aracı. kısaca, geliştirme ortamında farklı ruby versiyonları ile çalışılmasını önleyerek, canlıda yaşanabilecek versiyon çakışmalarının önüne geçilmesini sağlar.
+
+## rvm
+Ruby version manager.
+Basit bir komut satırı uygulaması
+Sisteme aynı anda birden fazla Ruby sürümü kurmayı sağlar.
+versiyonlar arasında geçiş yapmamıza olanak tanır.
+
+
 ## Ruby Variables ( Ruby Değişkenleri )
 
 ### Local Variables ( Yerel Değişkenler )
@@ -44,3 +54,10 @@ eğer hiç bir şart sağlanmıyorsa else içerisinde belirtilen kodlar çalış
 ### Unless
 if ifadesinin tersidir, içerdiği kod bloğu yalnızca şart ifadesi yanlışsa yürütülür.
 
+### Case 
+case yapılarını, çok seçenekli alternatif if yapıları gibi düşünebiliriz.
+
+
+## Loops 
+
+For, Loop, Until ve While döngülerini kodlar içerisinde kısaca anlattım.
