@@ -22,6 +22,7 @@ Herhangi bir veriyi tutan bellek konumlarına değişken denir. Ruby de ise 5 t�
  ![sekil1](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/rubyweek1/day1-images/sekil1.png)
 Şekil 1
 Çıktısı bu şekilde olur.
+![sekil2](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/rubyweek1/day1-images/sekil2.png)
  
 Şekil 2
 Kırmızı kutu içerisindeki (3.satırdaki kod) ‘$global_veriable’ değişkendir.  Bu şekil2 deki sonucu üretecektir. 
