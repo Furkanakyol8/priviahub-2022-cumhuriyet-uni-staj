@@ -35,15 +35,23 @@ Mavi kutu içerisindeki (6.satırdaki) puts ile de yazdırma işlemi yapıyoruz 
  
 Mavi kutu içerisindeki @stud_id, @stud_name ve @stud_addr örnek değişkenlerdir.
 3-Ruby Sınıfı Değişkenleri: Bu değişkenler @@ ile başlar. Başlatılmamış bir sınıf değişkenine başvurmak bir hata üretir. Bu yüzden yöntem tanımlarında kullanılmadan hemen önce başlatılmalıdır. Sınıf değişkenleri, sınıf değişkenlerinin tanımlandığı sınıfın veya modülün alt öğeleri arasında paylaşılır.
+
+![ruby_class_degisken](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/rubyweek1/day1-images/ruby_class_degisken.png)
  
 Sınıf değişkenine bir örnek.
 4-Ruby Yerel Değişkenler: Yerel değişkenler küçük harfle veya _ ile başlar. Kapsamı, sınıf, modül, def veya do’dan karşılık gelen sona veya bloğun açılış ayracından kapanış ayracına {} kadar değişir.
+
+![ruby_local_degisken](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/rubyweek1/day1-images/ruby_local_degisken.png)
  
 Buradaki id, name, addr yerel değişkene örnektir.
 Yakut sabitleri: Bu sabitler büyük harfle başlar. Bir sınıf veya modül dışında tanımlanan sabitlere global olarak erişilebilir. 
  
+![yakut_sabitleri](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/rubyweek1/day1-images/yakut_sabitleri.png)
+
 Burada VAR1 ve VAR2 sabitlerdir.
 Ruby if…else İfadesi: if else yapısı istenilen şartın gerçekleşmesi durumunda yapılması istenen ya da istenen durumun gerçekleşmediği durumda yapılması istenen yerlerde kullanılır. 
+
+![ruby_ifelse](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/rubyweek1/day1-images/ruby_ifelse.png)
  
 Parantez içinde şartımız belirlenir. Then kullanımı isteğe bağlıdır. Kullanım nedeni kafa karışıklığını önlemek için nerede bittiğini belirtiriz.  End koşulun sonlandığı yerdir. İf ile end arasında yazılan tüm kodlar şart istenilen gibi olduysa gerçekleşir.
  
