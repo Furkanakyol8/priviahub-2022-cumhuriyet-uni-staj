@@ -19,7 +19,7 @@ Burada stud1 ve stud2 nesnelerin adıdır. Eşittir işaretinden sonrası sını
 Ruby Değişkenler
 Herhangi bir veriyi tutan bellek konumlarına değişken denir. Ruby de ise 5 tür değişken vardır.
 1- Ruby Global Değişkenleri: Global değişkenler $ ile başlar. Başlatılmamışsa nil değerine sahip olur ve -w seçeneğiyle uyarılar üretir. Kullanılması önerilmez. Bir örnekle inceleyelim.
- 
+ ![sekil1](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/rubyweek1/day1-images/sekil1.png)
 Şekil 1
 Çıktısı bu şekilde olur.
  
