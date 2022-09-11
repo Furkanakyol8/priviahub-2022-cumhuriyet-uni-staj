@@ -8,7 +8,7 @@ Ruby Class- Object
 Ruby nesne yönelimli bir programdır ve nesne yönelimli bir program sınıf, nesne içerir. 
 Sınıf tek tek nesnelerin oluşturulduğu yerdir. Yani mesela bilgisayarları düşünelim. RAM, işlemci, ekran kartı, SSD kapasitesinden oluşur. Bunlar Bilgisayar sınıfının verileridir. Bunlar sayesinde bilgisayarlar arasında seçim yapabiliriz.
 
-(https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/blob/vesileyavuz/rubyweek1/day1-images/ruby-class-new.png)
+![ruby-class-new](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/blob/vesileyavuz/rubyweek1/day1-images/ruby-class-new.png)
   
 (Burada bilgisayar adında bir sınıf oluşturdum ve sınıfın içerisine ayırt edilebilecek özelikleri ekledim.)
 Rubyde bir sınıf oluştururken önce Class yazmamız gerekiyor. Sonrasında sınıfa vereceğimiz ismi yazarız. Ve bu isim her zaman büyük harfle başlar, yukarıdaki örnekte gösterdiğim gibi. End kelimesi ile de sınıfı sonlandırabiliyoruz. Yani tüm veriler class ile end arasında kalır. 
