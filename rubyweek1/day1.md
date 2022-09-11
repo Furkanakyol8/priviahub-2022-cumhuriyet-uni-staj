@@ -30,6 +30,8 @@ Sarı kutu içerisindeki (5.satırdaki) def ile metot tanımlaması yapıyoruz. 
 Mavi kutu içerisindeki (6.satırdaki) puts ile de yazdırma işlemi yapıyoruz daha sonra end ile metot tanımlamasını bitirdiğimizi söylüyoruz.
 2-Ruby Örnek Değişkenleri: Bu değişkenler @ ile başlar. 
 
+![ruby_example](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/rubyweek1/day1-images/ruby_example.png)
+
  
 Mavi kutu içerisindeki @stud_id, @stud_name ve @stud_addr örnek değişkenlerdir.
 3-Ruby Sınıfı Değişkenleri: Bu değişkenler @@ ile başlar. Başlatılmamış bir sınıf değişkenine başvurmak bir hata üretir. Bu yüzden yöntem tanımlarında kullanılmadan hemen önce başlatılmalıdır. Sınıf değişkenleri, sınıf değişkenlerinin tanımlandığı sınıfın veya modülün alt öğeleri arasında paylaşılır.
