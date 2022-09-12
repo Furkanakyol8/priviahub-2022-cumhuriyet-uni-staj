@@ -1,6 +1,7 @@
-for x  in  0..6
-     if  x ==4 
+for i  in  0..6
+     if  i ==4 
         next
      end
-     puts x
+     puts i
   end
+  # i değerimiz if koşulu sağlanıncaya kadar ekrana değerini yazdırır, koşul sağlanınca o anki değeri atlanır ve for döngüsü devam eder.

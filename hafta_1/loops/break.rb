@@ -6,3 +6,4 @@ while i < 10
   i += 1
   break if i == 6
 end
+# i değerimiz if koşulu sağlanıncaya kadar ekrana değerini yazdırır, koşul sağlanınca döngüden çıkar

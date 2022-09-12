@@ -1,3 +1,36 @@
+## Kurulumlar
+Kurulumları yaparken adımlarını uyguladığım dökümantasyonları linkleriyle birlikte paylaşacağım.
+
+Rbenv Ruby ve Rails Kurulum Link
+https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-20-04
+
+Ruby on Rails PostgreSQL Kurulum ve Proje Oluşturma link
+https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-18-04
+
+Wsl Download Web Site
+https://www.configserverfirewall.com/windows-10/wsl-2-requires-an-update-to-its-kernel-component/
+
+Microsoft Windows Subsystem Linux ve Kernel Update link
+https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
+
+Git install Link
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+## RVM 
+RVM, sisteminizde Ruby’nin birden çok kurulumunu kurup yönetmenize imkan sağlar. 
+Ayrıca farklı gem kümelerini yönetmek için de kullanılabilir.
+
+## rbenv
+
+ruby ile geliştirme yapanlar için bir versiyon yönetim aracı.
+kısaca, geliştirme ortamında farklı ruby versiyonları ile çalışılmasını önleyerek, 
+canlıda yaşanabilecek versiyon çakışmalarının önüne geçilmesini sağlıyor.
+
+## Class Object
+
+Sınıflar sayesinde programlar parçalara bölünür ve karmaşıklıgı azalır
+Sınıf, bir nesnenin ne olacagının ayrıntılı bir açıklaması,tanımı ve şablonudur.
+
 ## Ruby Variables
 
 ### Class Variables
