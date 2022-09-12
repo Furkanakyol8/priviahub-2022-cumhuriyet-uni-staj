@@ -29,6 +29,13 @@ Sisteme aynı anda birden fazla Ruby sürümü kurmayı sağlar.
 versiyonlar arasında geçiş yapmamıza olanak tanır.
 
 
+## Class, Objects
+Kısaca;
+Sınıf isimleri mutlaka büyük harf ile başlamalıdır.
+Sınıflar tanımlanırken class sözcüğü kullanılır
+Sınıf içinde oluşturulan değişkenler dışarıda kullanılamaz. Aynı şekilde sınıf dışında oluşturulan yerel değişkenler dışarıda kullanılamaz. (Sabitler ve global değişkenler hariç)
+
+
 ## Ruby Variables ( Ruby Değişkenleri )
 
 ### Local Variables ( Yerel Değişkenler )
