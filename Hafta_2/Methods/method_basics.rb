@@ -30,7 +30,7 @@ def topla(*p)
     end
     puts genel_toplam
 end
-# topla methodunun parametresi olan '*p' bu parametrenin birden çok değer içerebileceğini belirtir.
+# topla methodunun '*p' parametresindeki '*' işareti, bu parametrenin birden çok değer içerebileceğini belirtir.
 # aynı tipteki verileri parametremize değer olarak göndermemiz gerekir.
 # bu parametrelere emici parametreler de denir.
 # topla methodunda '*p' parametresinin içine ne kadar sayı girersek girelim method toplama işlemini gerçekleştirecektir.
