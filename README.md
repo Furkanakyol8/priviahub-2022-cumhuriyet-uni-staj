@@ -1,5 +1,4 @@
 ## 1. Hafta Konuları
-
 - Ruby Kurulumu 
 - Rails Kurulumu 
 - Postgresql Kurulumu 
@@ -14,7 +13,6 @@
 - Loops
 
 ## 2. Hafta Konuları
-
 - Methods / Methods With Parameters
 - attr_reader, attr_writer and another attr methods
 - Blocks, Procs and Lambdas
