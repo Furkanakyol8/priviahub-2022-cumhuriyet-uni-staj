@@ -1,5 +1,5 @@
 #metotlarımızı def ifadesi ile tanımlar ve blok sonuna end koyarız.
-#parametre almayan Merhjaba isimli bir metot yazalım.
+#parametre almayan Merhaba isimli bir metot yazalım.
 def merhaba
     puts " Merhaba çalışmama hoşgeldiniz "
 end
