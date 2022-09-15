@@ -1,9 +1,7 @@
 =begin
-    
-Method'lar "def" anahtar kelimesinden sonra methoda vermek istediğimiz isim yazılarak tanımlanır.
-İhtiyaca göre parametreli veya parametresiz olarak tanımlanabilirler
-Method gövdesine, methoda yaptırmak istediğimiz iş yazılır.
-    
+    Method'lar "def" anahtar kelimesinden sonra methoda vermek istediğimiz isim yazılarak tanımlanır.
+    İhtiyaca göre parametreli veya parametresiz olarak tanımlanabilirler
+    Method gövdesine, methoda yaptırmak istediğimiz iş yazılır.
 =end
 
 def televizyonu_ac                  

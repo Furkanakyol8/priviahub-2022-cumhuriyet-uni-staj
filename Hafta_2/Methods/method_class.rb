@@ -1,8 +1,6 @@
 =begin
-
-Class methodları bir classı new anahtar kelimesi ile oluşturmadan direkt kullanılabilen methodlardır.
-Örnekler üzerinde inceleyelim..
-
+    Class methodları bir classı new anahtar kelimesi ile oluşturmadan direkt kullanılabilen methodlardır.
+    Örnekler üzerinde inceleyelim..
 =end
 
 class Islemler

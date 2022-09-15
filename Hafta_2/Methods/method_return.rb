@@ -1,12 +1,10 @@
 =begin
+    Şimdiye kadar yazdığımız methodlar geriye bir değer döndürmeyip sadece işlem yapıyordu. Şimdi ise methodlar bize bir değer döndürecek.
+    Methodların bize bir değer döndürmesini istiyorsak bunu iki farklı yolla yapabiliriz;
+        1-) Methoddan geriye sadece bir adet değer dönmesini istiyorsak, gönderilmesini istediğimiz değeri methodun en sonuna yazarız
+        2-) Bir veya birden fazla değer dönmesini istiyorsak da 'return' anahtar kelimesini kullanabiliriz.
 
-Şimdiye kadar yazdığımız methodlar geriye bir değer döndürmeyip sadece işlem yapıyordu. Şimdi ise methodlar bize bir değer döndürecek.
-Methodların bize bir değer döndürmesini istiyorsak bunu iki farklı yolla yapabiliriz;
-    1-) Methoddan geriye sadece bir adet değer dönmesini istiyorsak, gönderilmesini istediğimiz değeri methodun en sonuna yazarız
-    2-) Bir veya birden fazla değer dönmesini istiyorsak da 'return' anahtar kelimesini kullanabiliriz.
-
-Şimdi örnekler üzerinden anlatmaya devam edelim
-
+    Şimdi örnekler üzerinden anlatmaya devam edelim
 =end
 
 def hesapla(maas, yuzdelik_zam)
