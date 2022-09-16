@@ -16,7 +16,7 @@ my_lambda.call
 my_lambda.()
 my_lambda[]
 my_lambda.===
-
+# not: bu yöntemler procs lar için de geçerlidir
 
 
 
