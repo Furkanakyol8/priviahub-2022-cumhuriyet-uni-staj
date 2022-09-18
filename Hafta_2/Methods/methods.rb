@@ -1,16 +1,16 @@
 # parametresiz metot 
-def test            # `def`, bir metot tanımlamak istedigimizi belirtiyor
-                    # `test`, metodumuzun adı
-    puts "Merhaba"  # `puts "Merhaba"` metodun gövdesidir 
-end                 # `end` metodun sonu anlamına gelir
+def test            # def, bir metot tanımlamak istedigimizi belirtiyor
+                    # test, metodumuzun adı
+    puts "Merhaba"  # puts "Merhaba" metodun gövdesidir 
+end                 # end metodun sonu anlamına gelir
 
 
 # parametreli metot
-def topla (p1,p2,p3)    # `(p1,p2,p3)` parametre kısmıdır parantez içinde ve parantesiz olabilir
+def topla (p1,p2,p3)    # (p1,p2,p3) parametre kısmıdır parantez içinde ve parantesiz olabilir
     puts p1+p2+p3
 end
 
-topla(3,4,5)  #bir metodu çagırmak istedigimizde parametre degerlerini, ister parantez içinde istersek de parantez olmadan girerek çagırmalıyız.
+topla(3,4,5)  #Bir metodu çagırmak istedigimizde parametre degerlerini, ister parantez içinde istersek de parantez olmadan girerek çagırmalıyız.
 
 =begin
     Parametre alan bir metoda parametre her zaman göndermek zorunda değiliz
