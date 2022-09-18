@@ -10,23 +10,23 @@ Git kullanabilmek için belirli başlı komutlara ihtiyaç duyarız. Bu komutlar
 
 # TEMEL GİT KOMUTLARI
 
-git init 			----- Proje dosyamızın içine girdikten sonra yazdığımızda gite projeyi yükler
-git add .			----- Projemizi git geçiş bölgesine ekler
-git branch [branchadi]		----- Yeni bir branch açar
-git remote add origin [link]	----- Yerel depoya origin adıyla uzak depoyu (remote repository) ekleme işlemidir
-git commit -m ""		----- Git deposuna dosyamızı atar
-git push origin [branchadi]	----- Yerel commitleri uzak depoya gönderir
-git log 			----- Projenin versiyonu, güncellenme tarihi vb. bilgileri tutar
-git status			----- Proje üzerinde yapılan değişiklikleri gösterir
-git diff			----- Dosyamızdaki değişiklikleri satır satır bize gösterir (çalışma dizini ve geçiş bölgesi arasındaki fark)
-git diff --staged		----- Geçiş bölgesi ve depo arasındaki farkı bize gösterir
-git rm ["dosyaadi"]		----- İsmi girilen dosyayı siler ve geçiş bölgesine bildirir, tekrar commit etmek gerekir
-git rm -r ["klasöradi"]		----- İçinde birden çok dosya olan klasörleri siler ve geçiş bölgesine bildirir, tekrar commit etmek gerekir
-git mv dosyaadi [yenidosyaadi]	----- Dosya ismini değiştirmemizi sağlar
-git mv [dosyaadi] [klasör/]	----- Dosyayı başka bir dizine(klasöre) taşır
-git checkout -- [dosyaadi]	----- Kendisi veya içeriği silinen/değiştirilen dosyayı geri getirir (çalışma dizini)
-git reset HEAD [dosyaadi]	----- Geçiş bölgesine aktarılan bir dosyadaki değişikleri geri getirir (geçiş bölgesi)
-git checkout [hashkodu -- .]	----- Bir önceki versiyona geçmeyi sağlar
-git checkout [branch name]	----- Branch değişikliği yapmamızı sağlar
-git checkout -b [branch name]	----- Yeni bir branch oluşturur ve o branche geçiş yaparız.
-git stash			----- Branch üzerinde yapılan değişikliklerin geçici olarak Git tarafından kayıt altına alınmasını sağlar
+- git init 			----- Proje dosyamızın içine girdikten sonra yazdığımızda gite projeyi yükler
+- git add .			----- Projemizi git geçiş bölgesine ekler
+- git branch [branchadi]		----- Yeni bir branch açar
+- git remote add origin [link]	----- Yerel depoya origin adıyla uzak depoyu (remote repository) ekleme işlemidir
+- git commit -m ""		----- Git deposuna dosyamızı atar
+- git push origin [branchadi]	----- Yerel commitleri uzak depoya gönderir
+- git log 			----- Projenin versiyonu, güncellenme tarihi vb. bilgileri tutar
+- git status			----- Proje üzerinde yapılan değişiklikleri gösterir
+- git diff			----- Dosyamızdaki değişiklikleri satır satır bize gösterir (çalışma dizini ve geçiş bölgesi arasındaki fark)
+- git diff --staged		----- Geçiş bölgesi ve depo arasındaki farkı bize gösterir
+- git rm ["dosyaadi"]		----- İsmi girilen dosyayı siler ve geçiş bölgesine bildirir, tekrar commit etmek gerekir
+- git rm -r ["klasöradi"]		----- İçinde birden çok dosya olan klasörleri siler ve geçiş bölgesine bildirir, tekrar commit etmek gerekir
+- git mv dosyaadi [yenidosyaadi]	----- Dosya ismini değiştirmemizi sağlar
+- git mv [dosyaadi] [klasör/]	----- Dosyayı başka bir dizine(klasöre) taşır
+- git checkout -- [dosyaadi]	----- Kendisi veya içeriği silinen/değiştirilen dosyayı geri getirir (çalışma dizini)
+- git reset HEAD [dosyaadi]	----- Geçiş bölgesine aktarılan bir dosyadaki değişikleri geri getirir (geçiş bölgesi)
+- git checkout [hashkodu -- .]	----- Bir önceki versiyona geçmeyi sağlar
+- git checkout [branch name]	----- Branch değişikliği yapmamızı sağlar
+- git checkout -b [branch name]	----- Yeni bir branch oluşturur ve o branche geçiş yaparız.
+- git stash			----- Branch üzerinde yapılan değişikliklerin geçici olarak Git tarafından kayıt altına alınmasını sağlar
