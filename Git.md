@@ -11,6 +11,7 @@ Git kullanabilmek için belirli başlı komutlara ihtiyaç duyarız. Bu komutlar
 # TEMEL GİT KOMUTLARI
 
 - git init 			----- Proje dosyamızın içine girdikten sonra yazdığımızda gite projeyi yükler
+- git clone			-----  Mevcut bir Git deposunun bir kopyasını alır
 - git add .			----- Projemizi git geçiş bölgesine ekler
 - git branch [branchadi]		----- Yeni bir branch açar
 - git remote add origin [link]	----- Yerel depoya origin adıyla uzak depoyu (remote repository) ekleme işlemidir
