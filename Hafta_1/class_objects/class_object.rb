@@ -11,4 +11,4 @@ end
 my_cikolata = Cikolata.new
 my_cikolata.ye
 
-# my_cikolata isimli bir nesne oluşturduk ve 'ye' metodunu nesne üzerinden kullandık.
+# my_cikolata isimli bir nesne oluşturduk ve 'ye' metodunu nesne üzerinden kullandık...
