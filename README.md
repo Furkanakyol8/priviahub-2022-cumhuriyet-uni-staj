@@ -1,16 +1,23 @@
 ## 1. Hafta Konuları
 
 -Ruby Kurulumu
+
 -Rails Kurulumu
+
 -Postgresql Kurulumu
+
 -Versiyon Yönetim Araçlarının Kullanımı (rbenv, rvm)
+
 -Class, Object
+
 -Ruby Variables
  *Global Variables
  *Instance Variables
  *Local Variables
  *Class Variables
+
 -Conditional Statements(if,else..)
+
 -Loops
 
 
