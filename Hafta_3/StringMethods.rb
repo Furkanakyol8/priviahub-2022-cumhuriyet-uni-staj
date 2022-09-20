@@ -1,3 +1,10 @@
+=begin
+    Bu yazımızda stringlere uygulanan belirli başlı kolaylaştırıcı hazır methodların neler olduğunu ve
+  bu methodların kullanım şekillerini öğreneceğiz.
+=end
+
+
+
 # String uzunluk hesaplama [size]
 "ruby".size # => 4
 # Bir String'in boş olup olmadığını kontrol etme [size]
@@ -105,8 +112,8 @@ string << "hello"
 string << " "
 string << "there"
 =begin
-stringlere karakter eklemek için '+=' kullanılmamalıdır çünkü bu her seferinde yeni bir string oluşturur.
-'+=' yerine '<<' methodu tercih edilmelidir.
+   Stringlere karakter eklemek için '+=' kullanılmamalıdır çünkü bu her seferinde yeni bir string oluşturur.
+  '+=' yerine '<<' methodu tercih edilmelidir.
 =end
 
 
@@ -142,20 +149,50 @@ puts a  # => aaa bbb ccc
 string = "We have many dogs"
 puts string.gsub("dogs", "cats") # => "We have many cats"
 =begin
-gsub ilk parametresi değiştirilecek metin, ikinci parametresi yerine yazılmak istenilen metin
-gsub methodunun sonuna '!' işareti konulursa string içeriğini kalıcı olarak değiştirir
-gsub methodu ayrıca düzenli ifadeleri argüman olarak alır, böylece tam kelimeler yerine kalıplar da değiştirilebilir.
+  gsub ilk parametresi değiştirilecek metin, ikinci parametresi yerine yazılmak istenilen metin
+  gsub methodunun sonuna '!' işareti konulursa string içeriğini kalıcı olarak değiştirir
+  gsub methodu ayrıca düzenli ifadeleri argüman olarak alır, böylece tam kelimeler yerine kalıplar da değiştirilebilir.
 =end
-
 string = "We have 3 cats"
 puts string.gsub(/\d+/, "5")  # => "We have 5 cats" -'/\d+/ kalıbı sayıları ifade eden bir kalıptır'
 
 
 
+# input alınarak oluşturulan stringlerde fazlalık yeni satırı (\n) kaldırmak  [chomp]
+puts "What's your name?"
+puts name = gets.chomp
+# chomp methodundan sonra '!' işareti konulursa string içeriğini kalıcı olarak değiştirir.
 
 
 
+# String'ten son karakteri kaldırmak
+abcd = "abcd?".chomp("?") # Kaldırmak istenen son karakter, chomp methoduna parametre olarak verilir
+puts abcd #=> abcd
 
+
+
+=begin
+   Stringler bir bayt dizisi olarak saklanır, kodlamalarına göre görebileceğiniz karakterlere dönüştürülür. Örneğin,
+  ASCII kodlamasındaki 65 sayısı "A" harfini temsil eder. Ancak, farklı dillerden (Çince vb.) ve hatta emojilerden karakterleri
+  temsil etmenize olanak tanıyan UTF-8 gibi daha karmaşık kodlamalar da vardır.
+  Bir string için geçerli kodlamayı bulmak için 'encoding' methodu kullanılabilir.
+=end
+puts "abc".encoding # => "UTF-8"
+
+=begin
+   Diskten bir dosya okurken veya bir web sitesinden bazı veriler indirirken encoding uyuşmazlık sorunlarıyla karşılaşabiliriz.
+  Bu sorun genellikle 'force_encoding' çözülür.
+=end
+x = "abcd".force_encoding("UTF-32")
+puts x.encoding # => "UTF-32"
+
+
+
+# String içerisinde karakterleri saymak [count]
+str = "aaab"
+
+str.count("a") # => 3
+str.count("b") # => 1
 
 
 
