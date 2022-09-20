@@ -20,6 +20,12 @@ puts m # => Merhaba
 
 
 
+
+# String metnini ters çevirme [reverse]
+puts "merhaba dünya".reverse  # => "ünyad abahrem"
+# reverse method sonuna '!' işareti eklenirse string içeriği kalıcı olarak değişir
+
+
 # Stringlerde formatlama [#{}]
 name = "Furkan"
 puts "Hello #{name}"  # => "Hello Furkan"
