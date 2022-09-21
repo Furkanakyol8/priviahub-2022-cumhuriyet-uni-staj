@@ -253,5 +253,3 @@ str = "aaab"
 
 str.count("a") # => 3
 str.count("b") # => 1
-
-
