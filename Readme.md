@@ -18,3 +18,9 @@
 - Blocks, Procs and Lambdas
 - Arrays and Hashes
 - Ruby File I/O
+
+## 3.Hafta Konuları
+- Ruby String Methods
+- Ruby Integer Methods
+- Ruby Array Methods
+- Ruby Time Methods / strftime using
