@@ -40,14 +40,10 @@ h = {elma: 0, armut: nil, kivi: 2, muz: nil}
 h1 = h.compact
 h1 # => {:elma=>0, :kivi=>2}
 
-# compare_by_identity, compare_by_identity?
-
 # default metodu, varsayılan bir değer belirlemek için kullanılır. Sözlükte bulunmayan bir değer çagırdıgımızda varsayılan değer döner.
 h = Hash.new("varsayılan")
 h.default    #=> "varsayılan"
 h[:test]     #=> "varsayılan"
-
-# default_proc
 
 # Hash'den key kullanarak eleman silmek için delete method'u kullanılır
 h = {"a" => 100, "b" => 200}
@@ -195,10 +191,6 @@ a = [ "a", "b" ]
 c = [ "c", "d" ]
 h = { a => 100, c => 300 } # => {["a", "b"]=>100, ["c", "d"]=>300}
 
-# reject
-
-# reject!
-
 # Argüman olarak belirtilen anahtar ve değer çiftlerini var olan hash'deki anahtar ve değerlerin üstüne yazar.
 h = {"a" => 100, "b" => 200}
 h.replace({"c" => 300, "d" => 400}) #=> {"c" => 300, "d" => 400}
@@ -235,19 +227,9 @@ h.to_h                            # => {:foo=>"bar"}
 h.to_hash                         # => {:foo=>"bar"} # metoduda aynı işlemi yapar.
 [[:foo, "bar"]].to_h              # => {:foo=>"bar"}
 
-# to_proc
-
 # Stringe çevirmek için kullanılır.
 h = {:foo => "bar"}
 h.to_s              # => "{:foo=>\"bar\"}"
-
-#transform_keys
-
-#transform_keys!
-
-#transform_values 
-
-#transform_values!
 
 # Hash içinde bulunan tüm değerleri array nesnesi olarak verir.
 h = {"a" => 100, "b" => 200, "c" => 300}

@@ -52,7 +52,6 @@ a[1..3]                #=> [ "b", "c", "d" ]
 a[4..7]                #=> [ "e" ]
 a[6..10]               #=> nil
 a[-3, 3]               #=> [ "c", "d", "e" ]
-# special cases
 a[5]                   #=> nil
 a[6, 1]                #=> nil
 a[5, 1]                #=> []
@@ -158,8 +157,6 @@ scores.delete_if {|score| score < 80 }   #=> [97]
 # difference metodu, iki dizi karşılaştırılır aynı olmayan elemanlar çıkartılarak yeni bir dizi döndürür.
 [ 1, 1, 2, 2, 3, 3, 4, 5 ].difference([ 1, 2, 4 ])     #=> [ 3, 3, 5 ]
 
-# dig metodu, 
-
 # drop metodu, parametre olarak belirtilen elemanı dizinde arar bulduğu noktadan sonraki elemanları yeni bir dizi olarak döndürür.
 a = [1, 2, 3, 4, 5, 0]
 a.drop(3)             #=> [4, 5, 0]
@@ -198,12 +195,6 @@ a.fill("y", 0..1)        #=> ["y", "y", "z", "z"]
 a.fill {|i| i*i}         #=> [0, 1, 4, 9]
 a.fill(-2) {|i| i*i*i}   #=> [0, 1, 8, 27]
 
-# filter
-
-# filter?
-
-# find_index metodu
-
 # dizinin ilk indeksini veya argüman olarak girilen indeksini döndürür.
 a = [ "q", "r", "s", "t" ]
 a.first     #=> "q"
@@ -229,14 +220,10 @@ a.index("b")              #=> 1
 a.index("z")              #=> nil
 a.index {|x| x == "b"}    #=> 1
 
-# initialize_copy
-
 # insert metodu(index,değer), belirtilen index numarasına istenilen değeri ekler
 a = %w{ a b c d }
 a.insert(2, 99)         #=> ["a", "b", 99, "c", "d"] 
 a.insert(-2, 1, 2, 3)   #=> ["a", "b", 99, "c", 1, 2, 3, "d"]
-
-# inspect
 
 # intersection metodu, iki dizi arasındaki ortak değerleri alarak yeni bir dizi döndürür.
 [ 1, 1, 3, 5 ].intersection([ 3, 2, 1 ])                    # => [ 1, 3 ]
@@ -315,8 +302,6 @@ Eğer birden fazla eleman koşula true dönerse sonuç false olur
 hayvanlar.one?{ |hayvan_ismi| hayvan_ismi.length > 6 } # => true
 # Uzunluğu 3'ten büyük 5 isim olduğu için false döndü!
 hayvanlar.one?{ |hayvan_ismi| hayvan_ismi.length > 3 } # => false
-
-#pack
 
 =begin
 permutation metodu, aslındaki matematikteki permutasyon işlemidir. Parametre vermezsek normal permutasyonunu döndürür.
