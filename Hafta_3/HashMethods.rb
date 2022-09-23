@@ -8,6 +8,9 @@ h.count  # => 2
 
 
 
+
+
+
 =begin
   Key, Value Kontrolleri  [keys, values, values_at]
   keys ile Hash'e ait key'leri, values ile sadece key'lere karşılık gelen değerleri, values_at ile verdiğimiz key'lere ait değerleri alırız.
@@ -16,6 +19,37 @@ h = {:user => "Furkan", :password => "secret", :email => "Furkan@hotmail.com"}
 h.keys                        # => [:user, :password, :email]
 h.values                      # => ["Furkan", "secret", "Furkan@hotmail.com"]
 h.values_at(:user, :password) # => ["Furkan", "secret"]
+
+
+
+
+
+
+=begin
+  Hash yapılarında atama işlemleri
+=end
+
+# store
+h = {:user => "Furkan", :password => "secret"}
+h.store(:email, "Furkan@hotmail.com") # => "Furkan@hotmail.com"
+h                                   # => {:user=>"Furkan", :password=>"secret", :email=>"Furkan@hotmail.com"}
+
+h[:url] = "http://webbox.io"        # => "http://webbox.io"
+h                                   # => {:user=>"Furkan", :password=>"secret", :email=>"Furkan@hotmail.com", :url=>"http://webbox.io"}
+
+# default=   # Karşılığı olmayan keyler için varsayılan değeri atamak için kullanılır.
+h = Hash.new
+h                         # => {}
+h.default = 100           # => 100
+h[:user_weight]           # => 100
+h[:foo]                   # => 100
+
+# invert  # Hash'in key'leri ile value'lerini yer değiştirmek için kullanılır.
+h = { "a" => 100, "b" => 200 } # => {"a"=>100, "b"=>200}
+h.keys                         # => ["a", "b"]
+h.invert                       # => {100=>"a", 200=>"b"}
+
+
 
 
 
@@ -70,6 +104,7 @@ h.default_proc # => #<Proc:0x007f85f2250fd8@-:7>
 
 
 
+
 =begin
   rehash
   Hash'e key olarak Array verebiliriz. Yani h[key] = value mantığında key olarak Array geçebiliriz.
@@ -90,6 +125,7 @@ h[a]                       # => nil ????????
 # h[a] nil döndü. İşte şimdi rehash kullanarak problemi ortadan kaldıracağız.
 h.rehash                   # => {["v", "b"]=>100, ["c", "d"]=>300}
 h[a]                       # => 100
+
 
 
 
@@ -116,6 +152,7 @@ h.to_s                            # => "{:foo=>\"bar\"}"
 
 
 
+
 =begin
   Hash yapısında eşitlik kontrolleri  [ == , eql?]
   Hash içinde key'lerin sırası eşitlik kontrolünde önemli değildir. İçerik önemlidir. Eşitlik kontrolü için kullanılırlar.
@@ -129,6 +166,7 @@ h2 == h3 # => true
 
 h1.eql?(h2)  # => false
 h2.eql?(h3)  # => true
+
 
 
 
@@ -171,6 +209,9 @@ h1 # => {:foo=>0, :baz=>2}
 
 
 
+
+
+
 =begin
   Hash yapılarında çağırma işlemleri
 =end
@@ -189,10 +230,13 @@ h.fetch(:email) { |element| "key: #{element} is not defined!" } # => "key: email
 
 puts h.fetch_values(:user)  # => "Furkan"
 
-
 # assoc
 h = {foo: 0, bar: 1, baz: 2}
 h.assoc(:bar) # => [:bar, 1]
+
+
+
+
 
 
 =begin
@@ -218,29 +262,9 @@ h1            # => {"a"=>100, "b"=>200, "x"=>1, "y"=>2, "z"=>3}
 
 
 
-=begin
-  Hash yapılarında atama işlemleri
-=end
 
-# store
-h = {:user => "Furkan", :password => "secret"}
-h.store(:email, "Furkan@hotmail.com") # => "Furkan@hotmail.com"
-h                                   # => {:user=>"Furkan", :password=>"secret", :email=>"Furkan@hotmail.com"}
 
-h[:url] = "http://webbox.io"        # => "http://webbox.io"
-h                                   # => {:user=>"Furkan", :password=>"secret", :email=>"Furkan@hotmail.com", :url=>"http://webbox.io"}
 
-# default=   # Karşılığı olmayan keyler için varsayılan değeri atamak için kullanılır.
-h = Hash.new
-h                         # => {}
-h.default = 100           # => 100
-h[:user_weight]           # => 100
-h[:foo]                   # => 100
-
-# invert  # Hash'in key'leri ile value'lerini yer değiştirmek için kullanılır.
-h = { "a" => 100, "b" => 200 } # => {"a"=>100, "b"=>200}
-h.keys                         # => ["a", "b"]
-h.invert                       # => {100=>"a", 200=>"b"}
 
 =begin
   replace
@@ -255,6 +279,8 @@ h1.replace({ "foo" => 1, "bar" => 2 })
 h1        # => {"foo"=>1, "bar"=>2}
 h1.__id__ # => 70320602334320
 # Referansları aynı : 70320602334320. Eğer direkt olarak atama yapsakdık h1 gibi görünen ama bambaşka yepyeni bir Hash'imiz olacaktı.
+
+
 
 
 
@@ -310,19 +336,11 @@ h.compare_by_identity? # => false
 h.compare_by_identity  # => {"a"=>1, "b"=>2, :c=>"c"}
 h.compare_by_identity? # => true
 
-# acaba key ile value benziyormu?h = { "a" => 1, "b" => 2, :c => "c" }
-# h["a"] # => 1
-# h.compare_by_identity? # => false
-# h.compare_by_identity  # => {"a"=>1, "b"=>2, :c=>"c"}
-# h.compare_by_identity? # => true
-#
 # # acaba key ile value benziyormu?
-# h["a"]                 # => nil
-#
-# # burada benzer :)
-# h[:c]                  # => "c"
 h["a"]                 # => nil
-
+# # burada benzer :)
+h[:c]                  # => "c"
+h["a"]                 # => nil
 # burada benzer
 h[:c]                  # => "c"
 

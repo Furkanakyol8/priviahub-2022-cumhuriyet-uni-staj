@@ -13,10 +13,13 @@ puts "ruby".length
 
 
 
+
+
 # String metninin baş harfini büyük yapmak [capitalize]
 m = "merhaba"
 m.capitalize  # capitalize methodundan sonra '!' işareti kullanılırsa string içeriği kalıcı olarak değişir
 puts m # => Merhaba
+
 
 
 
@@ -26,9 +29,14 @@ puts "merhaba dünya".reverse  # => "ünyad abahrem"
 # reverse method sonuna '!' işareti eklenirse string içeriği kalıcı olarak değişir
 
 
+
+
+
 # Stringlerde formatlama [#{}]
 name = "Furkan"
 puts "Hello #{name}"  # => "Hello Furkan"
+
+
 
 
 
@@ -45,6 +53,8 @@ puts "merhaba".partition("r").inspect # => ["me", "r", "haba"]
 
 
 
+
+
 # Bir stringin başka bir string içerip içermediğini anlamak [include & index]
 # include?
 string = "Today is Saturday"
@@ -53,6 +63,9 @@ puts string.include?("Saturday") # => "true"
 # index
 string = "Today is Sunday"
 string.index("day") # => "2"  'day stringi iki kere geçtiğinden sonuç 2 olur'
+
+
+
 
 
 
@@ -67,6 +80,9 @@ puts "dünya".prepend("Merhaba ")  # => "Merhaba dünya"  - önüne eklendi
 
 
 
+
+
+
 # Stringlerde büyük harf küçük harf duyarlılığı [upcase & downcase & swapcase]
 lang1 = "ruby"
 lang2 = "RUBY"
@@ -78,6 +94,8 @@ puts "lang3: #{lang3.swapcase}" # => "RuBy"
 
 
 
+
+
 # Stringlerde fazlalık boşlukları ortadan kaldırmak  [lstrip & rstrip]
 extra_space = "   test word   "
 
@@ -85,6 +103,7 @@ puts extra_space.strip # => "test word"
 puts extra_space.lstrip # "test word   " 'stringin sol tarafındaki gereksiz boşlukları siler'
 puts extra_space.rstrip # "   test word" 'stringin sağ tarafındaki gereksiz boşlukları siler'
 # strip methodunun sonuna '!' eklenerek kullanılırsa string içeriğini kalıcı olarak değiştirir.
+
 
 
 
@@ -99,6 +118,9 @@ puts "merhaba".eql?("merhaba") # => true
 # empty?
 puts "merhaba".empty? # => false
 puts "".empty? # => true
+
+
+
 
 
 
@@ -120,6 +142,9 @@ puts x  # => "Furkn kyol"
 
 
 
+
+
+
 # Bir stringi dizi karakterlerine dönüştürmek
 string = "My name is Furkan"
 puts string.split.inspect # => ["My", "name", "is", "Furkan"]
@@ -132,12 +157,18 @@ puts string.split(",").inspect # => ["kalem", "silgi", "kağıt", "makas", "uhu"
 
 
 
+
+
+
 # Bir stringi farklı veri tiplerine dönüştürmek
 puts "55".to_i  # => 55  integer
 puts "55".to_c  # => 55+0i  char
 puts "55".to_f  # => 55.0  float
 puts "55".to_r  # => 55/1  rational
 puts "55".to_sym  # => 55  symbol
+
+
+
 
 
 
@@ -155,6 +186,7 @@ puts "Merhaba millet! Saat 10'da buluşalım".scan(/Saat \d+/) # => ["Saat 10"]
 
 
 
+
 # Stringlere karakter eklemek
 string = ""
 
@@ -168,14 +200,20 @@ string << "there"
 
 
 
+
+
 # Bir stringin karakterleri üzerinde gezinme
 "rubyguides".each_char {|ch| puts ch} # => r u b y g u i d e s
+
+
 
 
 
 # Bir string metnini karakterlere ayırma [chars]
 array_of_characters = "rubyguides".chars
 puts array_of_characters.inspect  # => ["r", "u", "b", "y", "g", "u", "i", "d", "e", "s"]
+
+
 
 
 
@@ -195,6 +233,8 @@ puts a  # => aaa bbb ccc
 
 
 
+
+
 # Bir string içerisindeki metni değiştirme  [gsub & tr]
 string = "We have many dogs"
 puts string.gsub("dogs", "cats") # => "We have many cats"
@@ -211,10 +251,13 @@ puts "merhaba hello".tr("el", "ip")   # => "mirhaba hippo"  'e' -> 'i', 'l' -> '
 
 
 
+
+
 # Stringlerde fazlalık yeni satırı (\n) kaldırmak  [chomp]
 "merhaba\n".chomp # => "merhaba"
 "merhaba dünya".chomp(" dünya") # => "merhaba"
 # chomp methodundan sonra '!' işareti konulursa string içeriğini kalıcı olarak değiştirir.
+
 
 
 
@@ -225,9 +268,12 @@ puts "hey seeeeeeeeeen! alooooooooo".squeeze  # => hey sen! alo
 
 
 
+
 # String'ten son karakteri kaldırmak  [chomp]
 abcd = "abcd?".chomp("?") # Kaldırmak istenen son karakter, chomp methoduna parametre olarak verilir
 puts abcd #=> abcd
+
+
 
 
 
@@ -245,6 +291,7 @@ puts "abc".encoding # => "UTF-8"
 =end
 x = "abcd".force_encoding("UTF-32")
 puts x.encoding # => "UTF-32"
+
 
 
 
