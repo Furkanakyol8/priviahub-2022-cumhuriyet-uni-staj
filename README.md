@@ -49,3 +49,33 @@
 -Ruby Time Methods / strftime using
 
 -Ruby Hash Methods
+
+
+## 4. Hafta Konuları
+
+-Rails projesinde dosya dizin yapısını tanıma
+
+-Rails Get Started alanındaki yönergeler doğrultusunda Rails MVC mimarisinin kavranılmasıyla birlikte Rails projesi oluşturulması
+
+-CRUD işlemleri
+
+-CRUD işlemleri API
+
+-Scaffold Yapısı
+
+-Action Controller
+
+-Action Controller Callback
+
+-Rails Routes
+
+
+## 5. Hafta Konuları
+
+-Action Controller Callbackler nelerdir? Örnekli anlatım.
+
+-Rails Routes yapısı ve kullanımı
+
+-Rails ve MVC mimarisi ilişkisi, örnekli anlatım.
+
+-Rails API oluşturulması ve kullanımı
