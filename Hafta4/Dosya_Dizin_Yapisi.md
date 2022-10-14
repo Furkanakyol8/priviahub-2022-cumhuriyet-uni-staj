@@ -6,10 +6,11 @@ Bu komutu çalıştırdıktan sonra, Rails uygulamasının tüm öğelerini içe
 
 ![](berkayapp/app/assets/images/DosyaYapilari.png)
 
-- app : Bu klasörde   
+- app:
+Bu klasörde uygulamamız için controllers, model, views, yardımcıları, postaları, kanalları, işleri ve varlıkları içerir.
 - bin : Uygulamamızı başlatan ve uygulamamızı kurmak, güncellemek, dağıtmak veya çalıştırmak için kullandığınız diğer komut dosyalarını içerebilen Rails komut dosyasını içerir.
 - config : Bu klasörde uygulamamızın çalışma kuralları, yolları, veritabanı ve yapılandırma dosyaları bulunur.
-- db : Geçerli veritabanı şeması, ve veritabanı geçişleri için birleştirmeleri içerir.
+- db : Geçerli veritabanı şeması, ve veritabanı geçişleri için birleştirmeleri (Migration) içerir.
 - lib : Uygulamamız için modüller bulundurur.
 - log : Uygulamamızın log dosyaları bulunur. 
 - public : Dışarıdan, oldukları şekilde ulaşılabilen dosyalar buradadır. Burada statik dosyalarımız bulunur, tüm resimleriniz, javascriptleriniz, stilleriniz vs.
