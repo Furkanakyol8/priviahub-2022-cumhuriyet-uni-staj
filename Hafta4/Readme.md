@@ -1,10 +1,16 @@
-## DOSYA DİZİN YAPILARI
+## RAILS PROJE OLUŞTURMA
+Rails projemizi oluşturmak için terminal üzerinde `rails new appname` yazmamız yeterlidir.
+Projemizin veri tabanını belirtmek istersek `rails new appname -d=postgresql` yazmamız gerekir.
+Buradaki `appname` kısmı proje adı, `-d=postgresql` seçeneği ise PostgreSQL'i veritabanı olarak ayarlar.
 
-Rails projemizi oluşturmak için terminal üzerinde `rails new appname -d=postgresql` yazmamız yeterlidir.
-Buradaki `appname` kısmı proje adı, `-d=postgresql` seçeneği ise PostgreSQL'i veritabanı olarak ayarlar. 
+Örnek olarak;
+![](images/newProjects.png)
+
+
+
 Bu komutu çalıştırdıktan sonra, Rails uygulamasının tüm öğelerini içeren `appname` adlı yeni bir klasör görünür.
+Peki bu klasörler nelerdir şimdi onları inceleyelim.
 
-![](images/DosyaYapilari.png)
 - app: Bu klasörde uygulamamız için controllers, model, views, yardımcıları, postaları, kanalları, işleri ve varlıkları içerir.
 - bin : Uygulamamızı başlatan ve uygulamamızı kurmak, güncellemek, dağıtmak veya çalıştırmak için kullandığınız diğer komut dosyalarını içerebilen Rails komut dosyasını içerir.
 - config : Bu klasörde uygulamamızın çalışma kuralları, yolları, veritabanı ve yapılandırma dosyaları bulunur.
@@ -22,7 +28,7 @@ Bu komutu çalıştırdıktan sonra, Rails uygulamasının tüm öğelerini içe
 - Gemfile : Bu dosya Rails uygulamamızın bağlantılı olduğu Gem’leri belirtir.
 - README : Uygulama için kısa kullanım kılavuzudur. Uygulamamızın ne yaptığını, nasıl yaptığını vb. ayarları için kullanıcılara söylemek istediklerimizi bu dosyaya yazarız.
 
-## RAİLS - MVC MİMARİSİ İLİŞKİSİ
+## RAILS - MVC MİMARİSİ İLİŞKİSİ
 Ruby on Rails da bir uygulama yapabilmemiz için MVC yapısına ihtiyaç duyarız yani model, view ve controller dosyalarına ihtiyacımız vardır.
 Peki model, view ve controller'ın ne olduğuna ve nasıl oluşturabileceğimize bakalım.
 
@@ -50,4 +56,12 @@ Rails'de kendi controller dosyamızı `rails generate controller filenames` komu
 
 Örnek olarak;
 ![](images/controller.png)
+
+## RAILS ROUTES YAPISI
+Mvc’ de Route Config temel olarak sayfa çağırımlarında ve Controller ile haberleşme esnasında kullanılmaktadır.
+
+
+
+## CRUD İŞLEMLERİ
+
 
