@@ -1,6 +1,7 @@
 module Api  # Api modülümüzü oluşturduk.
   class ProductsController < ApplicationController
 =begin
+          ACTION CONTROLLER
     Before Action yapıları sayesinde belirli methodlardan önce gerçekleştirilmesi gereken işlemleri gerçekleştiririz.
     Bu sayede daha temiz, tekrara düşmeden kod yazma imkanı sağlarız.
 
