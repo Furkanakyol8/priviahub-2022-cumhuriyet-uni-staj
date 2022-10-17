@@ -86,6 +86,10 @@ Bu fonksiyon veritabanında herhangi bir bilgiyi değiştirmez, sadece görünt�
 - UPDATE (GÜNCELLEME) : Veritabanındaki bir değeri değiştirebiliriz.
 - DELETE (SİLME) : Veritabanında istemediğiniz bir kaydı silebiliriz.
 
+/controller/products_controller kısmında CRUD metodlarını oluşturarak işlemlerimizi gerçekleştirebiliriz.
+
+![](images/CRUD.png)
+
 ## CRUD İŞLEMLERİ API
 Dört ana HTTP yöntemi (GET, PUT, POST ve DELETE) CRUD işlemleriyle aşağıdaki gibi eşlenebilir:
 
