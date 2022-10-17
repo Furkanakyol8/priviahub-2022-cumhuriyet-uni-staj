@@ -1,17 +1,17 @@
 ## Rails Projesi Oluşturma
-![projeimage](file:///home/furkan/Pictures/projeolusturma.png)
+![](images/projeolusturma.png)
 
 Projemizi oluşturmak istediğimiz dosya dizini içerisinde fotoğrafta belirtilen
 komutu çalıştırıyoruz. Bu sayede postgresql veritabanı içeren 
 , dosyaları hazır olarak oluşturulmuş "furkanapp" isimli bir rails projesi
 karşımıza çıkıyor.
 
-![furkanappimage](file:///home/furkan/Pictures/DosyaDizinYapisi.png)
+![](images/DosyaDizinYapisi.png)
 ## Dosya Dizin Yapısı
 ### app/
 Bu klasörde temel yapı taşlarımız olan views,
 controllers ve models katmanları bulunur.
-![appsimage](file:///home/furkan/Pictures/apps.png)
+![](images/apps.png)
 
 ###### assets/
 Uygulamamızda statik olarak bulundurmak istediğimiz dosyaların
@@ -38,9 +38,9 @@ php kodlar barındaribilir. Kullanıcıdan
 alınan istekleri Controller’a iletmektedir.
 ## bin/
 
-![binimage](file:///home/furkan/Pictures/bins.png)
+![](images/bins.png)
 ## config/
-![configimage](file:///home/furkan/Pictures/configs.png)
+![](images/configs.png)
 
 Bu klasörde uygulamamızın çalışma kuralları, yolları, veritabanı 
 ve yapılandırma dosyaları bulunur.
@@ -48,23 +48,23 @@ ve yapılandırma dosyaları bulunur.
 ###### routes/
 Gelen isteklerin nereye yönlendirilmesi gerektiğini söyleyen methodları içerir.
 ## db/
-![dbimage](file:///home/furkan/Pictures/dbs.png)
+![](images/dbs.png)
 
 Geçerli veritabanı şeması, ve veritabanı geçişleri için birleştirmeleri 
 (Migration) içerir.
 
 ## lib/
-![libimage](file:///home/furkan/Pictures/libs.png)
+![](images/libs.png)
 
 Uygulamamız için modüller bulundurur.
 
 ## log/
-![logimage](file:///home/furkan/Pictures/logs.png)
+![](images/logs.png)
 
 Uygulamamızın log dosyalarını bulundurur.
 
 ## public/
-![publicimage](file:///home/furkan/Pictures/publics.png)
+![](images/publics.png)
 
 Dışarıdan , oldukları sekilde ulaşılabilen dosyalar buradadır.
 Burada statik dosyalarımız bulunur, tüm resimleriniz, javascriptleriniz,
@@ -72,19 +72,19 @@ stilleriniz ..
 
 ## test/
 
-![storageimage](file:///home/furkan/Pictures/storageandtest.png)
+![](images/storageandtest.png)
 
 Birim testleri , bağlayıcılar ve diğer test yardımcılarını içerir.
 
 ## tmp/
 
-![tmpimage](file:///home/furkan/Pictures/tmps.png)
+![](images/tmps.png)
 
 Geçici dosyaları barındırır.
 
 ## vendor/
 
-![vendorimage](file:///home/furkan/Pictures/vendors.png)
+![](images/vendors.png)
 
 Tüm 3. parti yazılımları buradadır.
 
