@@ -63,6 +63,7 @@ Rails'de kendi controller dosyamızı `rails generate controller filenames` komu
 Not:Oluşturmuş olduğumuz controller dosyamızın adını zorunlu olmasada çogul yazarız
 
 Örnek olarak;
+
 ![](images/controller.png)
 
 
