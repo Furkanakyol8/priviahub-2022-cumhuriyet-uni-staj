@@ -45,6 +45,8 @@ alınan istekleri Controller’a iletmektedir.
 Bu klasörde uygulamamızın çalışma kuralları, yolları, veritabanı 
 ve yapılandırma dosyaları bulunur.
 
+###### routes/
+Gelen isteklerin nereye yönlendirilmesi gerektiğini söyleyen methodları içerir.
 ## db/
 ![dbimage](file:///home/furkan/Pictures/dbs.png)
 
