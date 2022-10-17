@@ -16,7 +16,23 @@ module Api  # Api modülümüzü oluşturduk.
 
     Bir örnek üzerinde göremediğim için henüz tam olarak ne işe yaradıklarını bilmiyorum.
 
+
+        CRUD
+
+    CREATE (OLUŞTUR) : Bu özellik, örneğin, ilgili işlevi çağıracak olan uygulamadaki "Ekle" düğmesine basarak, bazı tetikleyicilerle
+   uygulamaya/veritabanına yeni bir öğe ekler.
+
+    READ (OKUMA) : Bu özellik, veritabanında belirli bir değer hakkında bir kayıt olup olmadığını görmenizi sağlar.
+   Bu fonksiyon veritabanında herhangi bir bilgiyi değiştirmez, sadece görüntüleme yapabilmenizi sağlar.
+
+    UPDATE (GÜNCELLEME) : Bu özellikl sayesinde veritabanındaki bir değeri değiştirebilirsiniz.
+
+    DELETE (SİLME) : Bu fonksiyon sayesinde veritabanında istemediğiniz bir kaydı silebilirsiniz.
+
+    Tanım olarak, CRUD mimari bir kavramdan çok bir döngüdür. Herhangi bir web uygulamasında birkaç CRUD döngüsü vardır.
+   Örneğin, bir online mağazada, bir müşteri bir hesap OLUŞTURABİLİR, hesap bilgilerini GÜNCELLEYEBİLİR ve sepetteki ürünleri SİLEBİLİR.
 =end
+
     before_action :set_product, only: %i[update show destroy] # "update show destroy" methodlarından önce her zaman set_product çalıştırır.
     after_action :confirm_message, only: %i[create]   # "create" methodundan sonra her zaman confirm_message çalıştırır.
 
