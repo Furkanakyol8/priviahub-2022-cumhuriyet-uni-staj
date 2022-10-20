@@ -2,6 +2,8 @@
 
 Active Job arka plan görevlerini yönetmek için kullanılır. Peki arka plan görevleri nelerdir? Arkaplan görevleri bir işlemin durmasına rol açmadan, eş bir çizgide yürüyerek rol almasıdır. E-mail gönderilmesi buna çok güzel bir örnektir. Örneğin kullanıcı sistemimize kayıt olmak için kayıt ol formunu doldurduğunda onaylama e-maili yollanıyor olsun. Kullanıcı onay tuşuna bastığında e-mail gönderme işlemini direkt olarak işleme alırsak, e-mail gönderilinceye kadar kullanıcı yükleme ekranında bekler. Fakat eğer arka plan görevi olarak çalışması sağlanırsa işlem bir kuyruğa alınır ve sayfa direkt yüklenir.
 
+![resim_1](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/active_job/img/Resim_1.png)
+
 Active Job, zamanlanmış olarak çalışacak görevleri tanımlayan, bu görevlerin kuyruk servislerine (çoğunlukla III. parti) aktarılmasından sorumlu bir framework yani uygulama çatısıdır.
 
 Active Job’un ana amacı; Kuyruk(queue) amacıyla kullandığımız III. parti servisi değişse dahi daha önceden yazmış olduğumuz görevlerin yani job’ların baştan yazımının önüne geçmektir.
@@ -20,15 +22,15 @@ Kuyruk servisini ayarlamka için ***Config*** dosyasında belirtmemiz yeterli ol
 
 Ya da görev bazlı olarak seçeceğimiz servisi değiştirebiliriz. Yani config dosyasında varsayılan olarak ayarlanan servisin üzerine yazmış oluruz. Örneğin haftalık bülten görevi için “sidekiq” kullanırken, ödeme hatırlatıcı e-postaların atılması için “resque” kullanabiliriz.
 
-![resim_1]()
+![resim_2](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/active_job/img/Resim_2.png)
 
-![resim_2]()
+![resim_3](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/active_job/img/Resim_3.png)
 
 Şimdi biz **sidekiq** kullanarak devam edeceğiz. Bunun için Gemfile’e sidekiq’i eklemeli ve routes dosyasını da aşağıdaki gibi ayarlamalısınız.
 
 `gem 'sidekiq', '~> 5.2', '>= 5.2.7'`
 
-![resim_3]()
+![resim_4](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/active_job/img/Resim_4.png)
 
 ### Kullanıcı kayıt olduğunda arka planda e-posta göndermek istersek:
 
@@ -42,15 +44,15 @@ Ya da görev bazlı olarak seçeceğimiz servisi değiştirebiliriz. Yani config
 
 Şimdi oluşan mailer dosyasına **welcome** diye bir method ekleyelim.
 
-![resim_4]()
+![resim_5](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/active_job/img/Resim_5.png)
 
 - Model’e de bir callback ekleyelim. Artık kullanıcı kayıt olduğunda arka plan görevi olarak bir e-posta atıyoruz.
 
-![resim_5]()
+![resim_6](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/active_job/img/Resim_6.png)
 
 Burada deliver_later ifadesi oldukça önemli. Böyle diyerek işlemin bir görev olarak kuyruğa girmesini sağlıyoruz. Eğer deliver_now deseydik kuyruğa girmeden direkt olarak işleme alınacaktı.
 
-![resim_6]()
+![resim_7](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/active_job/img/Resim_7.png)
 
 
 ## Job Oluşturma
@@ -59,7 +61,7 @@ Bir kullanıcı olsun ve satın aldığı bir abonelik mevcut olsun. Kullanıcı
 
 `rails generate job users_clean`
 
-![resim_7]()
+![resim_8](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/active_job/img/Resim_8.png)
 
 `GuestsCleanupJob.perform_later(@user)`
 Bunu tetiklemek için
@@ -71,7 +73,7 @@ Bizim tetikleme tarihi belirli bir tarih olduğu için.
 
 Job'lara da aynı modellerde yaptığımız gibi callback eklenebilir.
 
-![resim_8]()
+![resim_9](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/active_job/img/Resim_9.png)
 
 Diğer callback’ler de aynı model’deki gibidir.
 - before_enqueue
