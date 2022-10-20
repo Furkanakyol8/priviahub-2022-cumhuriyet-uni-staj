@@ -3,11 +3,11 @@
 Kurulumunu [](https://github.com/heartcombo/devise)  adresinden yapabilirsiniz. Orada bu gemle ilgili çok fazla belge ve detaylı anlatımlar var. Devise gemi bizim authentication işlemlerini yapabilmemize olanak sağlayan gemdir. Kullanıcı oluşturmayı, şifre oluşturmayı ve birçok kullanıcıyla ilgili birçok yapıyı sağlayan bir gemdir. 
 Github linkindeki ‘getting started’ kısmındaki ilk kodu gemfile dosyamızdaki # gem “bcrypt” … kısmının altına ekliyoruz (Şekil 1). Sonrasında vs code terminalimize “bundle install” diyerek tüm gemleri ekliyoruz. Ardından Github hesabındaki ikinci kodu yazıyoruz.
 
-![](imglinki)
+![resim_1](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_6/img/Resim1.png)
 
 Bunları yaptıktan sonra alacağımız çıktı aşağıdaki gibi olur (Şekil 2).
 
-![](imglinki)
+![resim_2](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_6/img/Resim2.png)
 
  Şekil 2’de de gördüğümüz gibi devise.rb ve devise.en.yml dosyalarımız oluştu. Devise gemi nedir? Bundan bahsedelim. Devise, Warden tabanlı Rails için esnek bir kimlik doğrulama çözümüdür. 
 
@@ -38,36 +38,36 @@ Devise gemi, Warden'ın üzerine inşa edilmiştir. Devise, genellikle Stratejil
 Şimdi Devise Token’ a bakalım.
 Bu gem devise ile entegre halindedir. Gemfile dosyamıza gem 'devise_token_auth' kodunu ekleyip (Şekil 3) terminalde bundle install diyoruz.
 
-![](imglinki)
+![resim_3](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_6/img/Resim3.png)
 
 Daha sonra config ayarlarının olduğu bir dosya oluşturmak için şekil 4’teki komutları yazıyoruz.
 
-![](imglinki)
+![resim_4](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_6/img/Resim4.png)
 
 Burada config ayarlarımın olduğu bir dosya oluşuyor. 
 Rails routes dediğimizde auth ayarlarımızın hepsi gözüküyor.
 
-![](imglinki)
+![resim_4_5](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_6/img/Resim4-5.png)
 
 Ayrıca route ları filtrelemek için; (mesela sadece auth ile ilgili şeyler) “Rails routes | grep auth” dememiz yeterli. Routes filtrelenmiş olur (Şekil 5).
 
 
-![](imglinki)
+![resim_5](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_6/img/Resim5.png)
 
 # Pundit Gemi: 
 
 Gemfile dosyamıza “gem ‘pundit’” şeklinde kodumuzu ekleyip sonra terminalden bundle install yapıyoruz.
 
-![](imglinki)
+![resim_5_6](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_6/img/Resim5-6.png)
 
 Devise_token_auth dosyasında false yapılması gereken bir yer var (Şekil 6). Nedeni ise hiçbir zaman token’ımızın düşmemesini sağlıyoruz. 
 
-![](imglinki)
+![resim_6](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_6/img/Resim6.png)
 
 Pundit install dediğimizde policies dosyamızda bir dosya oluştu. Bu da her bir model dosyası için policies oluşturmamızı sağlar. Burada yetkilendirme işlemlerimizi yaparız.
 Şimdi pundit policies i generate edelim.
 
-![](imglinki)
+![resim_6_5](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_6/img/Resim6-5.png)
 
 Böylece ilgili dosyalar oluşacak ve işlem yapmamızı sağlayacaktır.
 
