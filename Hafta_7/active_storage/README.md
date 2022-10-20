@@ -79,11 +79,11 @@ Aşağıdaki satır yorumlandığı zaman bir defaya mahsus orijinal blob’un b
 
 ` <%= image_tag @cat.image.variant(resize: "100x100") %> `
 
-## Direk Upload
+## Direkt Upload
 
 ActiveStorage bir ruby gemi olmasının yanında bünyesinde javascript kütüphanesi de barındırır. Dosyalarımızı Rails uygulamasına değil de direk cloud bir servise upload etmek istediğimiz zaman bu javascript kodları devreye girmektedir.
 
-Blob oluşurken bir identifier key üretilir ve dosya bu key ile cloud servise upload edilir. Resme tekrar ulaşmak istediğimizde bu key ile bağlantı kurulup erişilmektedir. Direk upload işleminde blob oluşturulma ve resmin store edilme sıralamasında değişiklik olur. Direkt upload işlemi için:
+Blob oluşurken bir identifier key üretilir ve dosya bu key ile cloud servise upload edilir. Resme tekrar ulaşmak istediğimizde bu key ile bağlantı kurulup erişilmektedir. Direkt upload işleminde blob oluşturulma ve resmin store edilme sıralamasında değişiklik olur. Direkt upload işlemi için:
 
 ``<%= form.file_field :images, multiple: true, direct_upload: true %> `
 
