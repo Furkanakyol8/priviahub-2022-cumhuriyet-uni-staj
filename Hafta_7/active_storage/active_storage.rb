@@ -68,7 +68,7 @@ create_table :active_storage_attachments do |t|
   end
   
   # strong_parameters
-  params.require(:car).permit(:name, :image)
+  params.require(:phone).permit(:name, :image)
 
 
   class Phone < ApplicationRecord
@@ -76,7 +76,7 @@ create_table :active_storage_attachments do |t|
   end
   
   # strong_parameters
-  params.require(:car).permit(:name, images: [])
+  params.require(:phone).permit(:name, images: [])
 
 
   
