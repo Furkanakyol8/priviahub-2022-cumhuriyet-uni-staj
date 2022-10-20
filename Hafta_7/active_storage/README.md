@@ -85,7 +85,7 @@ ActiveStorage bir ruby gemi olmasının yanında bünyesinde javascript kütüph
 
 Blob oluşurken bir identifier key üretilir ve dosya bu key ile cloud servise upload edilir. Resme tekrar ulaşmak istediğimizde bu key ile bağlantı kurulup erişilmektedir. Direkt upload işleminde blob oluşturulma ve resmin store edilme sıralamasında değişiklik olur. Direkt upload işlemi için:
 
-``<%= form.file_field :images, multiple: true, direct_upload: true %> `
+`<%= form.file_field :images, multiple: true, direct_upload: true %> `
 
 
 
