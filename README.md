@@ -79,3 +79,25 @@
 -Rails ve MVC mimarisi ilişkisi, örnekli anlatım.
 
 -Rails API oluşturulması ve kullanımı
+
+
+## 6. Hafta Konuları
+
+- Devise Gem Kullanımı / Authentication İşlemleri
+  
+- I18n Gem Kullanımı
+  
+- Active Record Migrations
+  
+- Active Record Callbacks
+  
+- Active Record Associations
+
+
+## 7. Hafta Konuları
+
+- Active Storage 
+
+- Active Job
+
+- Action Mailer
