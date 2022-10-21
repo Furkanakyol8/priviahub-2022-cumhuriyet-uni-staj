@@ -7,11 +7,11 @@ Action Mailer, postacı sınıflarını ve görünümlerini kullanarak uygulaman
 ``rails g mailer model_mailer`
 oluşturduktan sonra aşağıdaki dosyalar oluşacaktır.
 
-![resim_1](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/active_mailer/img/Resim_1.png)
+![resim_1](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/actions_mailer/img/Resim_1.png)
 
 - Sonrasında kullanıcının kayıtlı e-posta adresine bir e-posta gönderecek `welcome_email` adlı bir yöntem ekleyelim :
 
-![resim_2](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/active_mailer/img/Resim_2.png)
+![resim_2](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/actions_mailer/img/Resim_2.png)
 
 `default` yöntemi gönderilen tüm e-postalar için varsayılan değerleri ayarlar.
 
@@ -21,7 +21,7 @@ Mailer bir controller görevi görür, bu nedenle bu e-posta actionu tanımladı
 
 - Şimdi ise Controller' dan Mailer'ı çağıralım.
 
-![resim_3](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/active_mailer/img/Resim_3.png)
+![resim_3](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_7/actions_mailer/img/Resim_3.png)
 
 Kullanmak istediğimiz değişkenler parametre olarak `.with` yöntemine geçirilebilir. Action Mailer, .deliver_now veya .deliver_later kullanılarak e-postaların şimdi veya daha sonra gönderilmesine izin verir. Deatyları için [link](https://guides-rubyonrails-org.translate.goog/action_mailer_basics.html?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=sc) bakabilirsiniz.
 
