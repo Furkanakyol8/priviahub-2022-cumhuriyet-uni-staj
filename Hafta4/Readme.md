@@ -4,12 +4,12 @@ Projemizin veri tabanını belirtmek istersek `rails new appname -d=postgresql` 
 Buradaki `appname` kısmı proje adı, `-d=postgresql` seçeneği ise PostgreSQL'i veritabanı olarak ayarlar.
 
 Örnek olarak;
-![](images/newProjects.png)
+![](../images/newProjects.png)
 
 Bu komutu çalıştırdıktan sonra, Rails uygulamasının tüm öğelerini içeren `appname` adlı yeni bir klasör görünür.
 Peki bu klasörler nelerdir şimdi onları inceleyelim.
 
-![](images/dosyaYapilari.png)
+![](../images/dosyaYapilari.png)
 
 - app: Bu klasörde uygulamamız için controllers, model, views, yardımcıları, postaları, kanalları, işleri ve varlıkları içerir.
 - bin : Uygulamamızı başlatan ve uygulamamızı kurmak, güncellemek, dağıtmak veya çalıştırmak için kullandığınız diğer komut dosyalarını içerebilen Rails komut dosyasını içerir.
@@ -42,11 +42,11 @@ Rails'de kendi model dosyamızı `rails generate filename attribut` komutuyla ol
 `filename` kısmına dosya ismini yazarız, `attribut` kısmına ise özelliklerimizi yazarız.
 
 Örnek olarak;
-![](images/model.png)
+![](../images/model.png)
 
 Bir model, ApplicationRecord'dan miras alan ve diğer herhangi bir sınıf gibi metodlara sahip olan bir Ruby sınıfıdır.
 
-![](images/model2.png)
+![](../images/model2.png)
 
 ##### VİEW
 View, kullanıcının gördüğü arayüzü içeren katmandır.
@@ -64,19 +64,19 @@ Not:Oluşturmuş olduğumuz controller dosyamızın adını zorunlu olmasada ço
 
 Örnek olarak;
 
-![](images/controller.png)
+![](../images/controller.png)
 
 
 Bir controller, ApplicationController'dan miras alan ve diğer herhangi bir sınıf gibi metodlara sahip olan bir Ruby sınıfıdır.
 
-![](images/controller2.png)
+![](../images/controller2.png)
 
 ## RAILS ROUTES YAPISI
 MVC içerisinde yer alan routing yapısı gelen web isteklerini(GET, POST...) Controller ile eşleştirir.
 
 `rails routes` komutunu kullanarak aktif olan route'ları ve bu route'larla neler yapılabileceğine bakarız.
 
-![](images/routes.jpg)
+![](../images/routes.jpg)
 
 ## CRUD İŞLEMLERİ
 CRUD işlemleri oluşturmuz olduğumuz controller dosyamızda gerçekleştirilir.
@@ -89,7 +89,7 @@ Bu fonksiyon veritabanında herhangi bir bilgiyi değiştirmez, sadece görünt�
 
 /controller/products_controller kısmında CRUD metodlarını oluşturarak işlemlerimizi gerçekleştirebiliriz.
 
-![](images/CRUD.png)
+![](../images/crud.png)
 
 ## CRUD İŞLEMLERİ API
 Dört ana HTTP yöntemi (GET, PUT, POST ve DELETE) CRUD işlemleriyle aşağıdaki gibi eşlenebilir:
@@ -106,13 +106,13 @@ Ruby on Rails'de controller'ları yazarken, Before_action ve After_action kullan
 
 before_action ile controller'ımızda yapılacak bütün  işlemlerinden önce yapılması gereken metodu belirtiriz.
 
-![](images/before_action.png)
+![](../images/before_action.png)
 
 `set_product` kısmına metodun adını veririz ve metodumuzu yazarız
 
 after_action ile controller'ımızda yapılacak işlemlerden sonra çalışmasını istediğimiz metodu belirtiriz.
 
-![](images/after_action.png)
+![](../images/after_action.png)
 
 `after_action_method` kısmına metodun adını veririz ve metodumuzu yazarız.
 
@@ -120,4 +120,4 @@ after_action ile controller'ımızda yapılacak işlemlerden sonra çalışması
 Scafol yapısı uygulamamız için oluşturmamız gereken model, controller gibi dosyaları tek tek oluşturmamız yerine kendisi bu dosyaları oluşturur.
 Rails'de scaffold yapısını kullanabilmemiz için terminal üzerinde `rails generate scaffold Post attribut` yazmamız yeterlidir.
 `Post` kısmı dosya adı, `attribut` kısmı ise özelliklerimizi yazarız.
-![](images/scaffold.png)
+![](../images/scaffold.png)

@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/Hafta4/berkayapp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Hafta4/ecommerce" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Hafta5/berkayapp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hafta5/ecommerce" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Hafta5/gallery" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Hafta5/libraryapp" vcs="Git" />
   </component>
