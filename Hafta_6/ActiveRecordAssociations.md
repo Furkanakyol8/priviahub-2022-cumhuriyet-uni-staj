@@ -25,10 +25,5 @@ ilişkiler has_one ilişkilerdir.
 `has_one :product`
 
 
-
-
-
-
-
-
-örnekler category.rb ve product.rb
+# -
+örnekler category.rb ve product.rb içerisindde mevcuttur.

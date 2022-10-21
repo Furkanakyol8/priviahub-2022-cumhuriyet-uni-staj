@@ -1,4 +1,4 @@
-# Devise Gem
+# DEVISE GEM
 Devise gemi rails üzerinde bize esnek yetkilendirme çözümlerini
 sunan bir gemdir. Bütün kullanıcı ile ilgili yapıları yönetmemizi sağlar.
 
@@ -27,7 +27,7 @@ Artık her şeyi ayarladığımıza göre ilk kullanıcımızı oluşturalım.
 Devise, hesap oluşturmak, oturum açmak, oturumu kapatmak vb. için gereken tüm kodu ve yolları oluşturur.
 Rails sunucunuzun çalıştığından emin olalım,
 http://localhost:3000/users/sign_up açalım ve kullanıcı hesabını oluşturalım.
-## Kayıt ve Girş Bağlantıları Ekleme
+## Kayıt ve Giriş Bağlantıları Ekleme
 Şimdi tek yapmamız gereken, navigasyon çubuğunun sağ üst köşesine uygun
 bağlantılar veya giriş yapan kullanıcı hakkında uyarı eklemek.
 Bunu yapmak için `app/views/layouts/application.html.erb` dosyasına gidiyoruz ve <br>
