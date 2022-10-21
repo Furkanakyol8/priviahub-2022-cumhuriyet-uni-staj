@@ -41,3 +41,10 @@
 - Rails Route Yapısı ve Kullanımı
 - Rails ve MVC Mimarisi İlişkisi, Örnekli Anlatımı
 - Rails API Oluşturulması ve Kullanımı
+
+## 6. Hafta Konuları
+- Devise Gem Kullanımı / Authentication İşlemleri
+- I18n Gem Kullanımı
+- Active Record Migrations
+- Active Record Callbacks
+- Active Record Associations
