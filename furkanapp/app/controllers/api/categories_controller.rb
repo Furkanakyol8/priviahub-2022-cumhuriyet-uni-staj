@@ -1,4 +1,4 @@
-module Api  # Api modülümüzü oluşturduk.
+module Api # Api modülümüzü oluşturduk.
   class CategoriesController < ApplicationController
 
     before_action :set_category, only: %i[update show destroy]
@@ -27,13 +27,13 @@ module Api  # Api modülümüzü oluşturduk.
       if @category.save
         render json: @category, status: :ok
       else
-        remder json: "Category kaydedilemedi",status: :bad_request
+        remder json: "Category kaydedilemedi", status: :bad_request
       end
     end
 
     def update
       if @category.update(params_category)
-        render json: @category , status: :ok
+        render json: @category, status: :ok
       else
         render json: "category güncellenemedi", status: :bad_request
       end
@@ -47,7 +47,6 @@ module Api  # Api modülümüzü oluşturduk.
         render json: "Category silinemedi", status: :bad_request
       end
     end
-
 
     private
 
