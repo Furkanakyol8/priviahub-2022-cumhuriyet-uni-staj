@@ -11,8 +11,8 @@ yazıyoruz.
 - `config/environments/development.rb` dosyamızın içine gidip 
 `config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }`
 yapıştırıyoruz.
-- `app/views/layouts/application.html.erb` dosyasına gidip 
-![](images/devise.png)
+- `app/views/layouts/application.html.erb` dosyasına gidip <br>
+![](images/devise.png) <br>
 ifadesini yapıştırıyoruz.
 - `app/views/ideas/show.html.erb` dosyasına gidip
 `<p id="notice"><%= notice %></p>` yapıştırıyoruz.
@@ -30,10 +30,10 @@ http://localhost:3000/users/sign_up açalım ve kullanıcı hesabını oluştura
 ## Kayıt ve Girş Bağlantıları Ekleme
 Şimdi tek yapmamız gereken, navigasyon çubuğunun sağ üst köşesine uygun
 bağlantılar veya giriş yapan kullanıcı hakkında uyarı eklemek.
-Bunu yapmak için `app/views/layouts/application.html.erb` dosyasına gidiyoruz ve
-![](images/devise.png)
-yazıyoruz. Hemen sonrasında 
-![](images/dvise3.png)
+Bunu yapmak için `app/views/layouts/application.html.erb` dosyasına gidiyoruz ve <br>
+![](images/devise.png) <br>
+yazıyoruz. Hemen sonrasında <br>
+![](images/dvise3.png) <br>
 yazıyoruz. <br> <br>
 Son olarak, kullanıcı oturum açmadıysa, kullanıcıyı oturum açma sayfasına yönlendirmeye zorlauyoruz.
 `app/controllers/application_controller.rb` dosyasına gidip ` before_action :authenticate_user!` ekliyoruz
