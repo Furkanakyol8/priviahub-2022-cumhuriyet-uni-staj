@@ -1,6 +1,6 @@
 Ubuntu terminal üzerinde "rails new projeadı" şeklinde komut veriyoruz. Ben myproject adında bir klasör oluşturdum.
 
-![resim_1]()
+![resim_2](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/dosya_dizin_yapisi/img/resim_2.png)
 
 Sonrasında gerekli indirme işlemleri yapılıp, klasör oluşturuluyor. ls komutu ile oluşmuş mu diye kontrol edebiliriz. cd komutu ile de klasörün içerisine girebiliriz. Proje içinde app, bin config,db, lib, log, public, test,tmp ve vendor dizinleri ile bir kaç dosya görüyoruz. Şimdi bunların ne işe yaradıklarına değinelim:
 
@@ -28,7 +28,7 @@ Sonrasında gerekli indirme işlemleri yapılıp, klasör oluşturuluyor. ls kom
 
 - vendor/ : Tüm 3. parti yazılımları buradadır. Tipik bir Rails uygulamasında, Gem dosyaları,pluginler ve projenizin içine gömecekseniz Rails kaynak kodu bulunur.
 
-![resim_2]()
+![resim_1](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/dosya_dizin_yapisi/img/resim_1.png)
 
 Rails temeli; Model(ActiveRecord), Views(ActionView),
 Controller(ActionController) (MVC) üzerine kuruludur.
