@@ -1,0 +1,1 @@
+Bir uygulamanın ana parçalarından bazılarını oluşturmanın hızlı bir yoludur. Tek bir işlemde yeni bir kaynak için modeller, görünümler ve denetleyiciler oluşturmak istiyorsanız, iş için araç scaffold'dur. Scaffold bazı klasörlerle birlikte uygulamanızda birkaç dosya oluşturacak ve config/routes.rb dosyasını düzenleyecektir.
