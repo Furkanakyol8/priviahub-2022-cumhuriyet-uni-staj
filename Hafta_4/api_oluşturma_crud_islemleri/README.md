@@ -1,53 +1,53 @@
 - Projemizi oluşturmaya başlayalım.
 
-![resim_]()
+![resim_13](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_13.png)
 
 Api oluşturduğumuz için kullanılmayan dosyalar silindi.
 
-![resim_]()
+![resim_1](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_1.png)
 
 Yukarıda --api yazarak api oluşturduğumuzu belirttik. --database=postgresql ile kullanacağımız database i belirttik.
 
 - Oluşan projenin içine girmek için -cd komutunu kullanırız.
 
-![resim_]()
+![resim_2](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_2.png)
 
 - Projemizin içine girmiş olduk. Şimdi modelimizi oluşturalım.
 
-![resim_]()
+![resim_3](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_3.png)
 
-![resim_]()
+![resim_4](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_4.png)
 
 Vs code' da şu şekilde görürüz.
 
-![resim_]()
+![resim_5](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_5.png)
 
 - Şimdii, yaptığımız tüm bu işlemleri veritabanına yansıtalım.
 
-![resim_]()
+![resim_6](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_6.png)
 
 Veritabanına yansıtma işlemi başarılı.
 
-![resim_]()
+![resim_7](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_7.png)
 
 Sırada controller'larımızı oluşturmak var. Bunun için model'de yaptığımızın aynısını yapacağız.
 
-![resim_]()
+![resim_8](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_8.png)
 
-![resim_]()
+![resim_9](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_9.png)
 
 Vs code görünümüne bakalım. ProductsController'ımız oluştu.
 
-![resim_]()
+![resim_10]https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_10.png)
 
 - Sırada Route ayarı kaldı.
 
-![resim_]()
+![resim_11](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_11.png)
 
 Ayarlar bittikten sonra terminale rails routes yazarak route' lara ulaşabiliriz.
 
 
-![resim_]()
+![resim_12](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_12.png)
 
 Ruby on Rails kullanarak api yi yazmış bulunmaktayız. Yazdığımız api 4 temel CRUD(Create, Read, Update, Delete) fonksiyonunu gerçekleşebiliyoruz. Yani oluşturma, okuma, güncelleme ve silme işlemlerini gerçekleştirebiliyoruz. Bunlardan da kısaca bahsetmek gerekirse;
 
@@ -57,4 +57,4 @@ Ruby on Rails kullanarak api yi yazmış bulunmaktayız. Yazdığımız api 4 te
 
 - UPDATE (GÜNCELLEME) : Bu özellik sayesinde veritabanındaki bir değeri değiştirebilirsiniz. 
 
-- DELETE (SİLME) : Bu fonksiyon sayesinde veritabanında istemediğiniz bir kaydı silebilirsiniz. 
+- DELETE (SİLME) : Bu fonksiyon sayesinde veritabanında istemediğiniz bir kaydı silebilirsiniz.
