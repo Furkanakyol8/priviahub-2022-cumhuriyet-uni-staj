@@ -38,7 +38,7 @@ Sırada controller'larımızı oluşturmak var. Bunun için model'de yaptığım
 
 Vs code görünümüne bakalım. ProductsController'ımız oluştu.
 
-![resim_10]https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_10.png)
+![resim_10](https://gitlab.com/privia_security/Software/staj/backend/priviahub-2022-cumhuriyet-uni-staj/-/raw/vesileyavuz/Hafta_4/api_olu%C5%9Fturma_crud_islemleri/img/resim_10.png)
 
 - Sırada Route ayarı kaldı.
 
