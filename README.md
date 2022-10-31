@@ -101,3 +101,8 @@
 - Active Job
 
 - Action Mailer
+
+
+## 8. Hafta Proje Konusu
+
+- Devise ile kullanıcının sistemdeki signup/signin işlemleri yapılmalı. Form üzerinden file upload yapılmalı, file upload çalışması job ile arkaplan işlemlerine alınmalı ve başarılı file upload ardından kullanıcıya mail ile bilgilendirme yapılmalı.
