@@ -1,0 +1,1 @@
+Hafta 5 Konu örneklendirmeleri furkanapp içerisinde anlatılmıştır.

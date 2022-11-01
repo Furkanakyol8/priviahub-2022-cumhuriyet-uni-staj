@@ -36,10 +36,11 @@ module Api  # Api modülümüzü oluşturduk.
 
     before_action :set_product, only: %i[update show destroy] # "update show destroy" methodlarından önce her zaman set_product çalıştırır.
     after_action :confirm_message, only: %i[create]   # "create" methodundan sonra her zaman confirm_message çalıştırır.
+    before_action :authenticate_user!
 
 
     def index   # ismi "mobile" olan tüm ürünleri, sondan başa doğru listeler
-      @products = Product.where(name: "iphone").order(created_at: :desc)
+      @products = Product.all
       render json: @products
     end
 

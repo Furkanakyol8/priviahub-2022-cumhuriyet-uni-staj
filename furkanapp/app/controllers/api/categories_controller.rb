@@ -2,6 +2,7 @@ module Api # Api modülümüzü oluşturduk.
   class CategoriesController < ApplicationController
 
     before_action :set_category, only: %i[update show destroy]
+    before_action :authenticate_user!
 
     def index
       @categories = Category.order(created_at: :desc)
