@@ -40,6 +40,7 @@ module Api  # Api modülümüzü oluşturduk.
 
 
     def index   # ismi "mobile" olan tüm ürünleri, sondan başa doğru listeler
+      authorize(@product)
       @products = Product.all
       render json: @products
     end
@@ -51,16 +52,19 @@ module Api  # Api modülümüzü oluşturduk.
 
     def create  # Yeni bir ürün oluşturmamızı sağlar.
       @product = Product.create(product_params)
+
       @product.save
       render json: @product
     end
 
     def update  # Ürünlerin çeşitli parametrelerini güncellememizi sağlar.
+      authorize(@product)
       @product.update(product_params)
       render json: @product
     end
 
     def destroy # İstediğimiz ürünleri silme işlemini gerçekleştirir.
+      authorize(@product)
       @product.destroy
       render json: "ürün silindi"
     end
